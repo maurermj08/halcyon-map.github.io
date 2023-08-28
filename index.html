@@ -1,0 +1,178 @@
+<html>
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: url("assets/map.svg") no-repeat;
+        background-size: cover;
+    }
+
+    body {
+        background-color: #030409;
+    }
+
+    .banner {
+        height: 1000px;
+        width: 100%;
+    }
+
+    .left-banner {
+        position: fixed;
+        margin-left: 0px;
+
+    }
+</style>
+
+<script>
+    function init() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const message = urlParams.get('message') || "Welcome";
+        const locationString = urlParams.get('location') || "Home";
+        document.getElementById("message").textContent = message;
+        document.getElementById("location-string").textContent = locationString;
+        document.getElementById("message-besh").textContent = message;
+        document.getElementById("location-string-besh").textContent = locationString;
+        updateClock()
+    }
+
+    function updateClock() {
+        var display = new Date().toLocaleTimeString()
+        const now = new Date()
+        let hour = now.getHours()
+        let minute = now.getMinutes()
+        let period = hour >= 12 ? 'PM' : 'AM'
+
+        // Convert to 12-hour format
+        hour = hour % 12;
+        hour = hour === 0 ? 12 : hour
+
+        // Add leading zero if minute is single-digit
+        if (minute < 10) {
+            minute = '0' + minute
+        }
+
+        document.getElementById("time-string").textContent = `${hour}:${minute}`
+        document.getElementById("time-period").textContent = period
+        document.getElementById("time-period-besh").textContent = period
+        setTimeout(updateClock, 1000);
+    }
+</script>
+
+<body onload="init()">
+    <div class="banner">
+        <svg class="left-banner" viewBox="0 0 2854 442" preserveAspectRation="None">
+            <rect x="2148.52" y="9.15527e-005" fill="#030409" fill-opacity="1" fill-rule="evenodd"
+                stroke-linejoin="round" stroke="#030409" stroke-opacity="1" width="705.483" height="351" />
+            <rect x="1378.9" y="-3.05176e-005" fill="#030409" fill-opacity="1" fill-rule="evenodd"
+                stroke-linejoin="round" stroke="#030409" stroke-opacity="1" width="963.101" height="351" />
+            <path fill="#030409" fill-opacity="1" fill-rule="evenodd" stroke-linejoin="round"
+                d="M 0.00060909,0L 1378.9,0L 1378.9,354.205L 529.112,358.966L 494.039,400.861L 241.2,400.861L 168.354,418L 98.9013,400.861L -4.7655e-007,400.861L 0.00060909,354.205L 0.00060909,0 Z " />
+            <ellipse fill="#2699F4" fill-opacity="1" stroke-width="3" stroke-linejoin="round" stroke="#2699F4"
+                stroke-opacity="1" cx="199.419" cy="177.73" rx="11.0232" ry="10.7298" />
+            <ellipse fill="none" stroke-width="10" stroke-linejoin="round" stroke="#0D81DC" stroke-opacity="1"
+                cx="167.352" cy="253.959" rx="162.341" ry="162" />
+            <ellipse fill="none" stroke-width="10" stroke-linejoin="round" stroke="#0D81DC" stroke-opacity="1"
+                cx="167.357" cy="254.991" rx="130.189" ry="128.387" />
+            <ellipse fill="none" stroke-width="16" stroke-linejoin="round" stroke="#31A4FE" stroke-opacity="1"
+                cx="162.464" cy="253.959" rx="45.0705" ry="46.5147" />
+            <rect x="133.597" y="189.834" fill="#030409" fill-opacity="1" fill-rule="evenodd" stroke-width="0.2"
+                stroke-linejoin="round" width="35.3613" height="141.75" />
+            <path fill="#239EFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+                d="M 136.812,137.601L 149.671,123.717L 149.671,384.063L 136.983,393.503L 136.812,144.119" />
+            <path fill="#239EFF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+                d="M 156.099,120.509L 165.67,106.568L 165.67,367.984L 156.226,377.463L 156.099,127.054" />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1"
+                x1="1.72033e-005" y1="400" x2="58.1222" y2="400" />
+            <path fill="none" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" stroke="#4EA7FD"
+                stroke-opacity="1" d="M 273.575,400L 494.008,400C 494.008,400 526.724,369 526.724,357L 1667.51,351" />
+            <path fill="#0384FC" fill-opacity="1" stroke-width="6" stroke-linejoin="round"
+                d="M 292.615,381.949C 292.615,381.949 318.916,355 317.904,355L 720.515,355C 720.515,355 720.515,356 720.15,356.416C 715.505,361.703 692.445,378.257 680.431,381C 666.269,384.234 292.615,381.949 292.615,381.949 Z " />
+            <path fill="#0384FC" fill-opacity="1" fill-rule="evenodd" stroke-linejoin="round"
+                d="M 339.317,212L 333.701,193L 1689.59,193L 1699.57,212L 339.317,212 Z " />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="326.687"
+                y1="178.001" x2="748.574" y2="178.001" />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="809.702"
+                y1="178.206" x2="1688.55" y2="178.206" />
+            <path fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1"
+                d="M 2194.61,170.999L 2514.02,171.001L 2551.25,206L 2854,206" />
+            <text
+                transform="matrix(0.8043410181999207 0.0000000000000000 0.0000000000000000 1.0000000000000000 380.00 286.00)">
+                <tspan style=" font-family:Sterilict; font-size:56.106098pt;" letter-spacing="0.00em" fill="#3ABAEA"
+                    fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" id="message"></tspan>
+            </text>
+            <text
+                transform="matrix(1.6132397651672363 0.0000000000000000 0.0000000000000000 1.0000000000000000 371.00 330.00)">
+                <tspan style=" font-family:Aurek-Besh Narrow; font-size:18.559937pt;" letter-spacing="0.00em"
+                    fill="#3ABAEA" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" id="message-besh">
+                </tspan>
+            </text>
+            <path fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1"
+                d="M 187.394,75.0003L 224.472,43.0002L 338.712,43.0003L 364.767,21.0003L 1266.66,21.0003L 1290.71,43.0003L 2276.79,43.0003" />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="2321.38"
+                y1="10.9995" x2="2854" y2="10.9995" />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="2194.61"
+                y1="170.999" x2="2514.29" y2="170.999" />
+            <path fill="#0189FD" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+                d="M 319.672,163C 319.672,163 296.624,98.9999 223.47,76.9998C 220.771,76.1882 213.449,76.9999 213.449,76.9999C 214.451,75.9999 223.47,65.9999 223.47,65.9999L 351.775,65.9999L 379.798,35.9999L 1249.63,34.9999L 1274.68,58.9999L 1382.39,58.9999L 1383.05,161.076L 319.672,163 Z " />
+            <text
+                transform="matrix(0.9306154251098632 0.0000000000000000 0.0000000000000000 1.0000000000000000 371.00 127.00)">
+                <tspan style=" font-family:Sterilict; font-size:21.862385pt;" letter-spacing="0.00em" fill="#C4E1FF"
+                    fill-opacity="1" stroke-linejoin="round">HALCYON STARCRUISER</tspan>
+            </text>
+            <text
+                transform="matrix(1.9518511295318604 0.0000000000000000 0.0000000000000000 1.0000000000000000 361.00 97.00)">
+                <tspan style=" font-family:Aurek-Besh Narrow; font-size:23.642530pt;" letter-spacing="0.00em"
+                    fill="#C4E1FF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">halcyon starcruiser
+                </tspan>
+            </text>
+            <text
+                transform="matrix(0.8133421540260315 0.0000000000000000 0.0000000000000000 1.0000000000000000 2532.00 293.00)">
+                <tspan style=" font-family:Sterilict; font-size:53.307701pt;" letter-spacing="0.00em" fill="#51A1F7"
+                    fill-opacity="1" stroke-linejoin="round" id="time-string">01:40</tspan>
+            </text>
+            <text
+                transform="matrix(0.8702648282051085 0.0000000000000000 0.0000000000000000 1.0000000000000000 2726.00 313.00)">
+                <tspan style=" font-family:Sterilict; font-size:22.824501pt;" letter-spacing="0.00em" fill="#51A1F7"
+                    fill-opacity="1" stroke-linejoin="round" id="time-period">PM</tspan>
+            </text>
+            <text
+                transform="matrix(0.9846710562705993 0.0000000000000000 0.0000000000000000 1.0000000000000000 2725.00 282.00)">
+                <tspan style=" font-family:Aurek-Besh; font-size:24.578276pt;" letter-spacing="0.00em" fill="#51A1F7"
+                    fill-opacity="1" stroke-linejoin="round" id="time-period-besh">PM</tspan>
+            </text>
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="2747.78"
+                y1="240" x2="2805.9" y2="240" />
+            <path fill="#0189FD" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+                d="M 2148.52,59.0004L 2284.25,59.0004L 2307.16,32.0004L 2854,32.0004L 2854,189.078L 2550.2,190L 2516.34,159L 2148.52,159L 2148.52,59.0004 Z " />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="2844.98"
+                y1="157" x2="2776.84" y2="157" />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="2572.41"
+                y1="157" x2="2733.75" y2="157" />
+            <text
+                transform="matrix(0.7717025876045226 0.0000000000000000 0.0000000000000000 1.0000000000000000 2338.00 117.00)">
+                <tspan style=" font-family:Sterilict; font-size:24.589397pt;" letter-spacing="0.00em" fill="#C4E1FF"
+                    fill-opacity="1" stroke-linejoin="round" id="location-string">HOME</tspan>
+            </text>
+            <text
+                transform="matrix(1.5342227220535276 0.0000000000000000 0.0000000000000000 1.0000000000000000 2331.00 86.00)">
+                <tspan style=" font-family:Aurek-Besh Narrow; font-size:26.756989pt;" letter-spacing="0.00em"
+                    fill="#C4E1FF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+                    id="location-string-besh">HOME</tspan>
+            </text>
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="1634.69"
+                y1="351" x2="2212.65" y2="351" />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="2148.52"
+                y1="351" x2="2854" y2="351" />
+            <path fill="#0384FC" fill-opacity="1" fill-rule="evenodd" stroke-linejoin="round"
+                d="M 1637.68,212L 1635.44,193L 2176.6,193L 2180.58,212L 1637.68,212 Z " />
+            <path fill="#0384FC" fill-opacity="1" fill-rule="evenodd" stroke-linejoin="round"
+                d="M 2162,212L 2160.54,193L 2511.7,193L 2514.29,212L 2162,212 Z " />
+            <path fill="#0189FD" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+                d="M 1378.9,58.9998L 2228.77,59L 2229.68,159.532L 1379.35,161.219L 1378.9,58.9998 Z " />
+        </svg>
+    </div>
+
+</html>
