@@ -80,12 +80,6 @@
 	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 2961.97,635.001C 2980.21,635.001 2995,649.328 2995,667.001C 2995,684.674 2980.21,699.001 2961.97,699.001C 2943.72,699.001 2928.94,684.674 2928.94,667.001C 2928.94,649.328 2943.72,635.001 2961.97,635.001 Z "/>
 	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 2721.03,1450C 2739.28,1450 2754.06,1464.33 2754.06,1482C 2754.06,1499.67 2739.28,1514 2721.03,1514C 2702.79,1514 2688,1499.67 2688,1482C 2688,1464.33 2702.79,1450 2721.03,1450 Z "/>
 	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 3404.03,416.001C 3422.28,416.001 3437.06,430.328 3437.06,448.001C 3437.06,465.674 3422.28,480.001 3404.03,480.001C 3385.79,480.001 3371,465.674 3371,448.001C 3371,430.328 3385.79,416.001 3404.03,416.001 Z "/>
-	<text transform="matrix(0.8043459057807922 0.0000000000000000 0.0000000000000000 1.0000000000000000 2889.00 1749.00)" xml:space="preserve">
-		<tspan style=" font-family:Uno Estado; font-size:39.812904pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">JINaTa aSTEROID FIELD</tspan>
-	</text>
-	<text transform="matrix(1.5402585268020630 0.0000000000000000 0.0000000000000000 1.0000000000000000 2890.00 1791.00)" xml:space="preserve">
-		<tspan style=" font-family:Aurek-Besh Narrow; font-size:25.389730pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">jinata asteroid field</tspan>
-	</text>
 	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#267FF8" stroke-opacity="1" d="M 416,-96C 416,-96 598.637,688.149 1263,1664C 1568,2112 1700,2181 1732,2229"/>
 	<ellipse fill="#030409" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" cx="1294" cy="1710.1" rx="125.069" ry="120.9"/>
 	<ellipse fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" cx="1295.69" cy="1711.54" rx="75.0422" ry="75.0419"/>
@@ -98,4 +92,10 @@
 	<path fill="#DCFF85" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 2314,1162L 2314,1096.13L 2234.95,1162L 2314,1162 Z "/>
 	<ellipse fill="#030409" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" cx="2094.64" cy="939.121" rx="131.748" ry="127.357"/>
 	<ellipse fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" cx="2094.2" cy="937.803" rx="79.0496" ry="79.0493"/>
+	<text transform="matrix(0.8043459057807922 0.0000000000000000 0.0000000000000000 1.0000000000000000 2889.00 1749.00)" xml:space="preserve">
+		<tspan style=" font-family:Uno Estado; font-size:39.812904pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">JINaTa aSTEROID FIELD</tspan>
+	</text>
+	<text transform="matrix(1.5402585268020630 0.0000000000000000 0.0000000000000000 1.0000000000000000 2890.00 1791.00)" xml:space="preserve">
+		<tspan style=" font-family:Aurek-Besh Narrow; font-size:25.389730pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">jinata asteroid field</tspan>
+	</text>
 </svg>
