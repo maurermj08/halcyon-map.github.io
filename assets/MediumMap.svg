@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="3840" height="2160" viewBox="0 0 3840.00 2160.00" enable-background="new 0 0 3840.00 2160.00" xml:space="preserve">
+	<rect x="0.000651042" y="0" fill="#030409" fill-opacity="1" fill-rule="evenodd" stroke-linejoin="round" stroke="#000000" stroke-opacity="1" width="3840" height="2160"/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#05408F" stroke-opacity="0.803922" d="M 2127,-95.9973C 2127,-95.9973 1971.11,806.227 2208,1280C 2400,1664 3002.57,2105.21 3136,2272"/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#00347C" stroke-opacity="1" d="M 143,2240C 143,2240 561,1840 1233,1712C 1283.92,1702.3 1376.41,1705.66 1408,1664C 1568,1453 2061,1312 2592,960C 3116.57,612.261 3856.12,297.284 4032,224"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="3328" y1="-0.000244141" x2="3328" y2="2160"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="2816" y1="-0.000244141" x2="2816" y2="2160"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="2304" y1="0" x2="2304" y2="2160"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="1792" y1="-0.000244141" x2="1792" y2="2160"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="1280" y1="-0.000244141" x2="1280" y2="2160"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="768" y1="0" x2="768" y2="2160"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="256" y1="0" x2="256" y2="2160"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="0.000228882" y1="256" x2="3840" y2="256"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="-0.000164668" y1="768" x2="3840" y2="768"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="-0.000164668" y1="1280" x2="3840" y2="1280"/>
+	<line fill="none" stroke-width="2" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.603922" x1="0.000160853" y1="1792" x2="3840" y2="1792"/>
+	<g>
+		<path fill="#1059FB" fill-opacity="0.901961" stroke-width="0.2" stroke-linejoin="round" stroke="#438DFE" stroke-opacity="0.901961" d="M 605.726,1292.15C 625.851,1292.15 642.165,1308.14 642.165,1327.85C 642.165,1347.57 625.851,1363.56 605.726,1363.56C 585.601,1363.56 569.287,1347.57 569.287,1327.85C 569.287,1308.14 585.601,1292.15 605.726,1292.15 Z "/>
+		<path fill="#1059FB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#438DFE" stroke-opacity="1" d="M 554.875,1316.17L 506.835,1316.17C 506.835,1316.17 500.057,1267.63 546.091,1244.19L 572.94,1286.22L 554.875,1316.17 Z "/>
+		<path fill="#1059FB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#438DFE" stroke-opacity="1" d="M 589.035,1273.67L 563.688,1235.53C 563.688,1235.53 603.517,1206.97 645.666,1236.83L 620.928,1274.14L 589.035,1273.67 Z "/>
+		<path fill="#1059FB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#438DFE" stroke-opacity="1" d="M 656.62,1316.17L 704.66,1316.17C 704.66,1316.17 711.438,1267.63 665.404,1244.19L 638.555,1286.22L 656.62,1316.17 Z "/>
+		<path fill="#1059FB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#438DFE" stroke-opacity="1" d="M 554.875,1338.12L 506.835,1338.12C 506.835,1338.12 500.057,1386.67 546.091,1410.1L 572.94,1368.07L 554.875,1338.12 Z "/>
+		<path fill="#1059FB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#438DFE" stroke-opacity="1" d="M 589.037,1380.62L 563.69,1418.76C 563.69,1418.76 603.519,1447.33 645.668,1417.46L 620.93,1380.16L 589.037,1380.62 Z "/>
+		<path fill="#1059FB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#438DFE" stroke-opacity="1" d="M 656.621,1338.12L 704.66,1338.12C 704.66,1338.12 711.439,1386.67 665.405,1410.1L 638.556,1368.07L 656.621,1338.12 Z "/>
+	</g>
+	<text transform="matrix(0.9986150860786438 0.0000000000000000 0.0000000000000000 1.0000000000000000 210.00 1310.00)" xml:space="preserve">
+		<tspan style=" font-family:Uno Estado; font-size:37.650494pt;" letter-spacing="0.00em" fill="#0083FF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">aNaXES</tspan>
+	</text>
+	<text transform="matrix(2.1282329559326172 0.0000000000000000 0.0000000000000000 1.0000000000000000 117.00 1365.00)" xml:space="preserve">
+		<tspan style=" font-family:Aurek-Besh Narrow; font-size:25.143599pt;" letter-spacing="0.00em" fill="#0083FF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">ANAXES</tspan>
+	</text>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 638.968,1042C 657.211,1042 672,1056.33 672,1074C 672,1091.67 657.211,1106 638.968,1106C 620.724,1106 605.936,1091.67 605.936,1074C 605.936,1056.33 620.724,1042 638.968,1042 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 578.032,1444C 596.276,1444 611.064,1458.33 611.064,1476C 611.064,1493.67 596.276,1508 578.032,1508C 559.789,1508 545,1493.67 545,1476C 545,1458.33 559.789,1444 578.032,1444 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 613,798.002C 631.243,798.002 646.032,812.328 646.032,830.001C 646.032,847.675 631.243,862.001 613,862.001C 594.757,862.001 579.968,847.675 579.968,830.001C 579.968,812.328 594.757,798.002 613,798.002 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 487.032,640.001C 505.276,640.001 520.064,654.328 520.064,672.001C 520.064,689.674 505.276,704.001 487.032,704.001C 468.789,704.001 454,689.674 454,672.001C 454,654.328 468.789,640.001 487.032,640.001 Z "/>
+	<path fill="none" stroke-width="19" stroke-linejoin="round" stroke="#00419A" stroke-opacity="0.803922" d="M 1216,1618C 970,1358 823,1312 759,1312C 740.883,1312 691.623,1270.01 704,1216C 792,832 588,518 -7.79393e-005,-0.000244141"/>
+	<text transform="matrix(1.1371383666992187 0.0000000000000000 0.0000000000000000 1.0000000000000000 542.00 1597.00)" xml:space="preserve">
+		<tspan style=" font-family:Uno Estado; font-size:46.808285pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">CORUSCaNT</tspan>
+	</text>
+	<text transform="matrix(1.8076974153518677 0.0000000000000000 0.0000000000000000 1.0000000000000000 403.00 1680.00)" xml:space="preserve">
+		<tspan style=" font-family:Aurek-Besh Narrow; font-size:42.881054pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">CORUSCANT</tspan>
+	</text>
+	<line fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" x1="1387" y1="1622" x2="1778" y2="1254"/>
+	<text transform="matrix(0.8688973188400269 0.0000000000000000 0.0000000000000000 1.0000000000000000 1221.00 913.00)" xml:space="preserve">
+		<tspan style=" font-family:Uno Estado; font-size:61.801556pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">CHaNDRILa</tspan>
+	</text>
+	<text transform="matrix(1.7873492240905759 0.0000000000000000 0.0000000000000000 1.0000000000000000 1087.00 995.00)" xml:space="preserve">
+		<tspan style=" font-family:Aurek-Besh Narrow; font-size:43.185562pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">CHANDRILA</tspan>
+	</text>
+	<path fill="#DCFF85" fill-opacity="1" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 2762.91,1712.33L 2759.84,1799.54L 2804.75,1799.54L 2832.81,1757.66L 2807.56,1712.53L 2762.91,1712.33 Z "/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 2751.42,1690.07L 2709.32,1751.83L 2745.81,1822L 2815.98,1822L 2858.08,1760.25L 2821.59,1690.08L 2751.42,1690.07 Z "/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1409,1657C 1409,1657 1933,1516 2725,1720"/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1416.09,1717.79C 1416.09,1717.79 1941.27,1581.26 2731.51,1792"/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1422,1731C 1422,1731 1908.68,1707.26 2432.43,2062.16C 2433.31,2062.76 2596.36,2170.55 2615,2183C 2656.84,2210.93 2559.29,2146.86 2441,2068"/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1312,1830C 1312,1830 1355,2144 1344,2189"/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1330.22,1832C 1330.22,1832 1483,2151 1472,2196"/>
+	<g>
+		<ellipse fill="none" stroke-width="16" stroke-linejoin="round" stroke="#55A6FE" stroke-opacity="1" cx="3491.5" cy="874.5" rx="73.5002" ry="73.5"/>
+		<path fill="#55A6FE" fill-opacity="1" stroke-linejoin="round" stroke="#55A6FE" stroke-opacity="1" d="M 3492.25,839.273L 3529.85,804.624L 3453.98,805.359L 3492.25,839.273 Z "/>
+		<path fill="#55A6FE" fill-opacity="1" stroke-linejoin="round" stroke="#55A6FE" stroke-opacity="1" d="M 3490.27,908.99L 3527.88,943.638L 3452,942.903L 3490.27,908.99 Z "/>
+		<path fill="#55A6FE" fill-opacity="1" stroke-linejoin="round" stroke="#55A6FE" stroke-opacity="1" d="M 3527.37,876.247L 3562.01,913.853L 3561.28,837.978L 3527.37,876.247 Z "/>
+		<path fill="#55A6FE" fill-opacity="1" stroke-linejoin="round" stroke="#55A6FE" stroke-opacity="1" d="M 3457.66,874.269L 3423.01,911.874L 3423.75,836L 3457.66,874.269 Z "/>
+	</g>
+	<text transform="matrix(0.9986150860786438 0.0000000000000000 0.0000000000000000 1.0000000000000000 3598.00 864.00)" xml:space="preserve">
+		<tspan style=" font-family:Uno Estado; font-size:37.650494pt;" letter-spacing="0.00em" fill="#0083FF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">CaRIDa</tspan>
+	</text>
+	<text transform="matrix(1.7471153736114500 0.0000000000000000 0.0000000000000000 1.0000000000000000 3606.00 914.00)" xml:space="preserve">
+		<tspan style=" font-family:Aurek-Besh Narrow; font-size:23.759794pt;" letter-spacing="0.00em" fill="#0083FF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">CARIDA</tspan>
+	</text>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 1430.97,586.001C 1449.21,586.001 1464,600.328 1464,618.001C 1464,635.674 1449.21,650.001 1430.97,650.001C 1412.72,650.001 1397.94,635.674 1397.94,618.001C 1397.94,600.328 1412.72,586.001 1430.97,586.001 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 1953.03,448.001C 1971.28,448.001 1986.06,462.328 1986.06,480.001C 1986.06,497.674 1971.28,512.001 1953.03,512.001C 1934.79,512.001 1920,497.674 1920,480.001C 1920,462.328 1934.79,448.001 1953.03,448.001 Z "/>
+	<path fill="#267FF8" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#267FF8" stroke-opacity="1" d="M 1899.03,1248C 1917.28,1248 1932.06,1262.33 1932.06,1280C 1932.06,1297.67 1917.28,1312 1899.03,1312C 1880.79,1312 1866,1297.67 1866,1280C 1866,1262.33 1880.79,1248 1899.03,1248 Z "/>
+	<path fill="#267FF8" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#267FF8" stroke-opacity="1" d="M 2285.03,1026C 2303.28,1026 2318.06,1040.33 2318.06,1058C 2318.06,1075.67 2303.28,1090 2285.03,1090C 2266.79,1090 2252,1075.67 2252,1058C 2252,1040.33 2266.79,1026 2285.03,1026 Z "/>
+	<path fill="#267FF8" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#267FF8" stroke-opacity="1" d="M 2310.48,833C 2326.79,833 2340,845.802 2340,861.594C 2340,877.385 2326.79,890.187 2310.48,890.187C 2294.18,890.187 2280.97,877.385 2280.97,861.594C 2280.97,845.802 2294.18,833 2310.48,833 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 2457.03,1072C 2475.28,1072 2490.06,1086.33 2490.06,1104C 2490.06,1121.67 2475.28,1136 2457.03,1136C 2438.79,1136 2424,1121.67 2424,1104C 2424,1086.33 2438.79,1072 2457.03,1072 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 1853.97,1846C 1872.21,1846 1887,1860.33 1887,1878C 1887,1895.67 1872.21,1910 1853.97,1910C 1835.72,1910 1820.94,1895.67 1820.94,1878C 1820.94,1860.33 1835.72,1846 1853.97,1846 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 1940.97,1948C 1959.21,1948 1974,1962.33 1974,1980C 1974,1997.67 1959.21,2012 1940.97,2012C 1922.72,2012 1907.94,1997.67 1907.94,1980C 1907.94,1962.33 1922.72,1948 1940.97,1948 Z "/>
+	<path fill="#267FF8" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 2317.97,1514C 2336.21,1514 2351,1528.33 2351,1546C 2351,1563.67 2336.21,1578 2317.97,1578C 2299.72,1578 2284.94,1563.67 2284.94,1546C 2284.94,1528.33 2299.72,1514 2317.97,1514 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 2961.97,635.001C 2980.21,635.001 2995,649.328 2995,667.001C 2995,684.674 2980.21,699.001 2961.97,699.001C 2943.72,699.001 2928.94,684.674 2928.94,667.001C 2928.94,649.328 2943.72,635.001 2961.97,635.001 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 2721.03,1450C 2739.28,1450 2754.06,1464.33 2754.06,1482C 2754.06,1499.67 2739.28,1514 2721.03,1514C 2702.79,1514 2688,1499.67 2688,1482C 2688,1464.33 2702.79,1450 2721.03,1450 Z "/>
+	<path fill="#378AFB" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" stroke="#4E9AFB" stroke-opacity="1" d="M 3404.03,416.001C 3422.28,416.001 3437.06,430.328 3437.06,448.001C 3437.06,465.674 3422.28,480.001 3404.03,480.001C 3385.79,480.001 3371,465.674 3371,448.001C 3371,430.328 3385.79,416.001 3404.03,416.001 Z "/>
+	<text transform="matrix(0.8043459057807922 0.0000000000000000 0.0000000000000000 1.0000000000000000 2889.00 1749.00)" xml:space="preserve">
+		<tspan style=" font-family:Uno Estado; font-size:39.812904pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">JINaTa aSTEROID FIELD</tspan>
+	</text>
+	<text transform="matrix(1.5402585268020630 0.0000000000000000 0.0000000000000000 1.0000000000000000 2890.00 1791.00)" xml:space="preserve">
+		<tspan style=" font-family:Aurek-Besh Narrow; font-size:25.389730pt;" letter-spacing="0.00em" fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round">jinata asteroid field</tspan>
+	</text>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#267FF8" stroke-opacity="1" d="M 416,-96C 416,-96 598.637,688.149 1263,1664C 1568,2112 1700,2181 1732,2229"/>
+	<ellipse fill="#030409" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" cx="1294" cy="1710.1" rx="125.069" ry="120.9"/>
+	<ellipse fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" cx="1295.69" cy="1711.54" rx="75.0422" ry="75.0419"/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1385,1800C 1385,1800 1570,2195 1559,2240"/>
+	<path fill="none" stroke-width="19" stroke-linejoin="round" stroke="#1C79D4" stroke-opacity="0.803922" d="M 1996,-95.9976C 1996,-95.9976 1984,1152 2464,2176"/>
+	<path fill="#DCFF85" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1861.44,705.047L 1861.44,770.922L 1940.49,705.048L 1861.44,705.047 Z "/>
+	<path fill="none" fill-rule="evenodd" stroke-width="16" stroke-linejoin="round" stroke="#05408F" stroke-opacity="0.803922" d="M 2272,1152C 2272,1152 2576.11,1072.84 2665,1525C 2688,1642 3037.34,1570.04 3136,1696C 3248,1839 3680,2176 3680,2176"/>
+	<path fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1778,625.996L 1856.81,625.996L 2406,625.996L 2406,1254L 1778,1254L 1778,691.65L 1778,625.996 Z "/>
+	<rect x="1861.44" y="705.047" fill="none" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" width="456.728" height="465.512"/>
+	<path fill="#DCFF85" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 2314,1162L 2314,1096.13L 2234.95,1162L 2314,1162 Z "/>
+	<ellipse fill="#030409" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" cx="2094.64" cy="939.121" rx="131.748" ry="127.357"/>
+	<ellipse fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" cx="2094.2" cy="937.803" rx="79.0496" ry="79.0493"/>
+</svg>
