@@ -29,15 +29,6 @@
 
     }
 
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background: url("assets/map.svg") no-repeat;
-        background-size: cover;
-    }
-
     body {
         background-color: #030409;
     }
@@ -52,6 +43,15 @@
         margin-left: 0px;
 
     }
+
+    .map {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: url("assets/map.svg") no-repeat;
+        background-size: cover;
+        transition: background-image 1s ease-in-out;
+    }
 </style>
 
 <script>
@@ -60,6 +60,7 @@
         const urlParams = new URLSearchParams(queryString);
         const message = urlParams.get('message') || "Welcome";
         const locationString = urlParams.get('location') || "Home";
+        seconds = parseInt(urlParams.get('seconds') || "60");
         document.getElementById("message").textContent = message;
         document.getElementById("location-string").textContent = locationString;
         document.getElementById("message-besh").textContent = message;
@@ -88,9 +89,34 @@
         document.getElementById("time-period-besh").textContent = period
         setTimeout(updateClock, 1000);
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(".map");
+        const images = [
+            "assets/BigMap.svg",
+            "assets/MediumMap.svg",
+            "assets/SmallMap.svg",
+        ];
+        let currentImageIndex = 0;
+
+        function changeBackgroundImage() {
+            container.style.backgroundImage = `url(${images[currentImageIndex]})`;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+
+        changeBackgroundImage();
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        setInterval(changeBackgroundImage, parseInt(urlParams.get('seconds') || "60") * 1000);
+    });
 </script>
 
-<body onload="init()">
+<head>
+    <title>Halcyon Fan</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+
+<body class="map" onload="init()">
     <div class="banner">
         <svg class="left-banner" viewBox="0 0 2854 442" preserveAspectRation="None">
             <rect x="2148.52" y="9.15527e-005" fill="#030409" fill-opacity="1" fill-rule="evenodd"
