@@ -39,6 +39,16 @@
 
     }
 
+    @font-face {
+        font-family: "Eros Book";
+        src:
+            /* Modern Browsers */
+            url(assets/ErosBookRegular.woff) format('woff'),
+            /* Safari, Android, iOS */
+            url(assets/ErosBookRegular.ttf) format("truetype");
+
+    }
+
     html,
     body {
         background-color: #030409;
@@ -69,13 +79,13 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KY8R3TMXZ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-3KY8R3TMXZ');
+    gtag('config', 'G-3KY8R3TMXZ');
 </script>
-    
+
 <script>
     const zeroPad = (num, places) => String(num).padStart(places, '0')
 
@@ -84,11 +94,13 @@
         const urlParams = new URLSearchParams(queryString);
         const message = urlParams.get('message') || "Welcome";
         const locationString = urlParams.get('location') || "Home";
+        const cabinNumber = urlParams.get('cabin') || "";
         seconds = parseInt(urlParams.get('seconds') || "60");
         document.getElementById("message").textContent = message;
         document.getElementById("location-string").textContent = locationString;
         document.getElementById("message-besh").textContent = message;
         document.getElementById("location-string-besh").textContent = locationString;
+        document.getElementById("cabin").textContent = cabinNumber
         updateClock()
     }
 
@@ -225,10 +237,16 @@
                 y1="261.5" x2="2803" y2="261.5" />
             <path fill="#0189FD" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
                 d="M 2147,80.5002L 2282.45,80.5002L 2305.31,53.5002L 2851,53.5002L 2851,210.578L 2547.84,211.5L 2514.05,180.5L 2147,180.5L 2147,80.5002 Z " />
-            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="2842"
-                y1="178.5" x2="2774" y2="178.5" />
-            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#4EA7FD" stroke-opacity="1" x1="2570"
-                y1="178.5" x2="2731" y2="178.5" />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#84C3FF" stroke-opacity="1" x1="2816"
+                y1="180.5" x2="2748" y2="180.5" />
+            <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#9CCEFF" stroke-opacity="1" x1="2563"
+                y1="180.5" x2="2724" y2="180.5" />
+            <text
+                transform="matrix(0.8685918450355529 0.0000000000000000 0.0000000000000000 1.0000000000000000 2500.00 147.00)"
+                xml:space="preserve">
+                <tspan style=" font-family:Eros Book; font-size:78pt;" letter-spacing="0.10em" fill="#C4E1FF"
+                    fill-opacity="1" stroke-linejoin="round" id="cabin">2222</tspan>
+            </text>
             <text
                 transform="matrix(0.7700805664062499 0.0000000000000000 0.0000000000000000 1.0000000000000000 2336.00 138.00)">
                 <tspan style=" font-family:Sterilict; font-size:24.589397pt;" letter-spacing="0.00em" fill="#C4E1FF"
