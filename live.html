@@ -174,12 +174,12 @@
 
             for (const time of changeTimesAndDatesUTC) {
                 if (
-                    utcMonth === time.month &&
-                    utcDay === time.day &&
-                    utcHour === time.hour
+                    utcDay > time.day ||
+                    (utcDay === time.day && utcHour >= time.hour)
                 ) {
                     currentImageSetIndex = time.index
-                    break; // Stop checking for other times and dates
+                } else {
+                    break;
                 }
             }
 
