@@ -23,11 +23,11 @@
 		<path fill="#DCFF85" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 1780.99,709.437L 1804.65,730.871L 1804.65,709.437L 1811.3,709.437L 1811.3,737.551L 1802.17,737.551L 1771.01,709.437L 1780.99,709.437 Z M 1768.47,724.188L 1792.6,732.114L 1790.48,737.551L 1766.22,729.769L 1768.47,724.188 Z "/>
 	</g>
 	<g>
-		<path fill="#030409" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1767.36,1529.03L 1799.54,1529.29L 2023.8,1531.13L 2026.19,1277.09L 1769.76,1274.99L 1767.61,1502.47L 1767.36,1529.03 Z "/>
-		<path fill="#030409" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1801.74,1497.33L 1988.24,1498.86L 1990.01,1310.55L 1803.51,1309.02L 1801.74,1497.33 Z "/>
-		<path fill="#DCFF85" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1988.28,1314L 1988.03,1340.65L 1956,1313.73L 1988.28,1314 Z "/>
-		<path fill="#DCFF85" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1839.16,1404.12L 1947.83,1442.65L 1922.36,1404.63L 1948.8,1365.59L 1839.16,1404.12 Z "/>
-		<path fill="#DCFF85" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1801.74,1497.33L 1801.99,1470.68L 1834.02,1497.59L 1801.74,1497.33 Z "/>
+		<path fill="#030409" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 2027.67,1278.62L 1995.49,1277.98L 1771.27,1273.5L 1765.89,1527.5L 2022.28,1532.62L 2027.1,1305.18L 2027.67,1278.62 Z "/>
+		<path fill="#030409" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1992.92,1309.92L 1806.45,1306.19L 1802.46,1494.47L 1988.93,1498.19L 1992.92,1309.92 Z "/>
+		<path fill="#DCFF85" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1804.24,1491.04L 1804.8,1464.4L 1836.51,1491.68L 1804.24,1491.04 Z "/>
+		<path fill="#DCFF85" fill-opacity="1" stroke-width="16" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1954.41,1402.68L 1846.2,1362.88L 1871.22,1401.19L 1844.32,1439.91L 1954.41,1402.68 Z "/>
+		<path fill="#DCFF85" fill-opacity="1" stroke-width="6" stroke-linejoin="round" stroke="#DCFF85" stroke-opacity="1" d="M 1992.92,1309.92L 1992.36,1336.56L 1960.65,1309.27L 1992.92,1309.92 Z "/>
 	</g>
 	<line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.403922" x1="1504" y1="-0.000244141" x2="1504" y2="2160"/>
 	<line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#1B56E3" stroke-opacity="0.403922" x1="2464" y1="31.9998" x2="2464" y2="2192"/>
