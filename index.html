@@ -85,10 +85,40 @@
 
     gtag('config', 'G-3KY8R3TMXZ');
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
 
 <script>
     const zeroPad = (num, places) => String(num).padStart(places, '0')
+    const images = [
+        "assets/ChandrilaBig.svg",
+        "assets/ChandrilaMedium.svg",
+        "assets/ChandrilaSmall.svg",
+        "assets/CoruscantBig.svg",
+        "assets/CoruscantMedium.svg",
+        "assets/CoruscantSmall.svg",
+        "assets/KuatBig.svg",
+        "assets/KuatMedium.svg",
+        "assets/KuatSmall.svg",
+        "assets/BespinBig.svg",
+        "assets/BespinMedium.svg",
+        "assets/BespinSmall.svg",
+        "assets/AdinaxBig.svg",
+        "assets/AdinaxMedium.svg",
+        "assets/AdinaxSmall.svg",
+        "assets/BatuuBig.svg",
+        "assets/BatuuMedium.svg",
+        "assets/BatuuSmall.svg",
+        "assets/AdinaxBig2.svg",
+        "assets/AdinaxMedium.svg",
+        "assets/AdinaxSmall2.svg",
+        "assets/ChandrilaBig2.svg",
+        "assets/ChandrilaMedium.svg",
+        "assets/ChandrilaSmall.svg",
+    ];
+    let currentImageIndex = 0;
+    let mapInterval = null
 
+    // Initialize data
     function init() {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
@@ -104,6 +134,57 @@
         updateClock()
     }
 
+    function changeBackgroundImage() {
+        const container = document.querySelector(".map");
+        container.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+    }
+
+    // Save map as PNG
+    function saveAsPNG() {
+        document.getElementById("time-string").textContent = ""
+        document.getElementById("time-period").textContent = ""
+        document.getElementById("time-period-besh").textContent = ""
+        var elementToCapture = document.body
+
+        domtoimage.toPng(elementToCapture)
+            .then(function (dataUrl) {
+                var link = document.createElement('a')
+                link.href = dataUrl
+                link.download = 'map.png'
+                link.click()
+                updateClock()
+            })
+            .catch(function (error) {
+                console.error('Error:', error)
+            });
+    }
+
+    // Trigger save map as png
+    document.addEventListener("keydown", function (event) {
+        if ((event.ctrlKey || event.metaKey) && event.key === "s") {
+            event.preventDefault();
+            saveAsPNG();
+        }
+        // Left Arrow
+        else if (event.keyCode == '37') {
+            clearInterval(mapInterval)
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            mapInterval = setInterval(changeBackgroundImage, parseInt(urlParams.get('seconds') || "60") * 1000)
+            currentImageIndex = (currentImageIndex - 2 + images.length) % images.length;
+            changeBackgroundImage()
+            // Right Arrow
+        } else if (event.keyCode == '39') {
+            clearInterval(mapInterval)
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            mapInterval = setInterval(changeBackgroundImage, parseInt(urlParams.get('seconds') || "60") * 1000)
+            changeBackgroundImage()
+        }
+    });
+
+    // Update clock
     function updateClock() {
         var display = new Date().toLocaleTimeString()
         const now = new Date()
@@ -126,45 +207,12 @@
         setTimeout(updateClock, 1000);
     }
 
+    // Listener to rotate maps
     document.addEventListener("DOMContentLoaded", function () {
-        const container = document.querySelector(".map");
-        const images = [
-            "assets/ChandrilaBig.svg",
-            "assets/ChandrilaMedium.svg",
-            "assets/ChandrilaSmall.svg",
-            "assets/CoruscantBig.svg",
-            "assets/CoruscantMedium.svg",
-            "assets/CoruscantSmall.svg",
-            "assets/KuatBig.svg",
-            "assets/KuatMedium.svg",
-            "assets/KuatSmall.svg",
-            "assets/BespinBig.svg",
-            "assets/BespinMedium.svg",
-            "assets/BespinSmall.svg",
-            "assets/AdinaxBig.svg",
-            "assets/AdinaxMedium.svg",
-            "assets/AdinaxSmall.svg",
-            "assets/BatuuBig.svg",
-            "assets/BatuuMedium.svg",
-            "assets/BatuuSmall.svg",
-            "assets/AdinaxBig2.svg",
-            "assets/AdinaxMedium.svg",
-            "assets/AdinaxSmall2.svg",
-            "assets/ChandrilaBig2.svg",
-            "assets/ChandrilaMedium.svg",
-            "assets/ChandrilaSmall.svg",
-        ];
-        let currentImageIndex = 0;
-
-        function changeBackgroundImage() {
-            container.style.backgroundImage = `url(${images[currentImageIndex]})`;
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-        }
-
         changeBackgroundImage();
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        setInterval(changeBackgroundImage, parseInt(urlParams.get('seconds') || "60") * 1000);
+        mapInterval = setInterval(changeBackgroundImage, parseInt(urlParams.get('seconds') || "60") * 1000);
     });
 </script>
 
@@ -327,5 +375,6 @@
                 y1="99.4997" x2="559.793" y2="99.4987" />
         </svg>
     </div>
+</body>
 
 </html>
