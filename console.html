@@ -23,7 +23,7 @@
 
         .background {
             height: auto;
-            max-height: calc(100vh - 48px);
+            max-height: 100vh;
             position: fixed;
             left: 50%;
             transform: translateX(-50%);
@@ -35,11 +35,30 @@
 
         .image {
             height: auto;
-            max-height: calc(100vh - 80px);
+            max-height: 100vh;
             position: fixed;
             z-index: 100;
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        @media (max-width: 767px) {
+            .background {
+                height: auto;
+                max-height: calc(100vh - 48px);
+                position: fixed;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .image {
+                height: auto;
+                max-height: calc(100vh - 80px);
+                position: fixed;
+                z-index: 100;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     </style>
 </head>
@@ -331,5 +350,7 @@
         </span>
     </div>
 </body>
+
+</html>
 
 </html>
