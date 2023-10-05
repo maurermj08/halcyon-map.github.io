@@ -35,7 +35,7 @@
 
         .image {
             height: auto;
-            max-height: 100vh;
+            max-height: calc(100vh - 48px);
             position: fixed;
             z-index: 100;
             left: 50%;
@@ -49,7 +49,7 @@
         main: {
             button1: "events",
             button2: "ship_map_deck7",
-            button3: "galaxy_map",
+            button3: "galaxy_map_chandrila",
             button4: "",
             button5: "",
             button6: "",
@@ -109,9 +109,54 @@
             button6: "",
             button7: "main"
         },
-        galaxy_map: {
-            button1: "", // next
-            button2: "", // prev
+        galaxy_map_chandrila: {
+            button1: "galaxy_map_adinax2", // prev
+            button2: "galaxy_map_coruscant", // next
+            button3: "",
+            button4: "",
+            button5: "",
+            button6: "",
+            button7: "main"
+        },
+        galaxy_map_coruscant: {
+            button1: "galaxy_map_chandrila", // prev
+            button2: "galaxy_map_bespin", // next
+            button3: "",
+            button4: "",
+            button5: "",
+            button6: "",
+            button7: "main"
+        },
+        galaxy_map_bespin: {
+            button1: "galaxy_map_coruscant", // prev
+            button2: "galaxy_map_adinax", // next
+            button3: "",
+            button4: "",
+            button5: "",
+            button6: "",
+            button7: "main"
+        },
+        galaxy_map_adinax: {
+            button1: "galaxy_map_bespin", // prev
+            button2: "galaxy_map_batuu", // next
+            button3: "",
+            button4: "",
+            button5: "",
+            button6: "",
+            button7: "main"
+        },
+        galaxy_map_batuu: {
+            button1: "galaxy_map_adinax", // prev
+            button2: "galaxy_map_adinax2", // next
+            button3: "",
+            button4: "",
+            button5: "",
+            button6: "",
+            button7: "main"
+        },
+        galaxy_map_adinax2: {
+            button1: "galaxy_map_batuu", // prev
+            button2: "galaxy_map_chandrila", // next
             button3: "",
             button4: "",
             button5: "",
