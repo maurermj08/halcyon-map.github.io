@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Console</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <style>
         body {
             margin: 0;
@@ -234,6 +235,35 @@
                 }
             })
         }
+
+        document.addEventListener("keypress", function (event) {
+            var keyCode = event.keyCode;
+            if (keyCode >= 49 && keyCode <= 55) {
+                var digit = keyCode - 48;
+                runAction(digit);
+            }
+        });
+
+        function runAction(digit) {
+            if (digit >= 1 && digit <= 7) {
+                // Print the corresponding message
+                var buttonId = "button" + digit
+                var button = document.getElementById(buttonId)
+                button.style.visibility = "hidden";
+                setTimeout(function () {
+                    button.style.visibility = "visible";
+                }, BUTTON_HIDDEN_MS);
+
+                if (screens[currentScreen][button.id] !== "") {
+                    console.log(screens[currentScreen][button.id])
+                    currentScreen = screens[currentScreen][button.id]
+                    setScreen(`/assets/console/${currentScreen}.svg`)
+                }
+            } else {
+                console.log("Invalid digit. Please press a number key between 1 and 7.");
+            }
+        }
+
 
         setInterval(updateClock, 1000);
     }
