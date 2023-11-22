@@ -192,7 +192,26 @@
             button6: "",
             button7: "main"
         },
+        authorized: {
+            button1: "",
+            button2: "",
+            button3: "",
+            button4: "",
+            button5: "",
+            button6: "",
+            button7: "main"
+        },
     }
+    var users = {
+        "7a759b769a4cec8ecce48c0fab3a06c431154953": "Michael",
+        "957600b477e75700e06393e31b2628ad1a7df4fc": "Michael",
+        "01b307acba4f54f55aafc33bb06bbbf6ca803e9a": "Bob",
+        "97202fb00964c781f2261fb1d213f63736840769": "Joe",
+        "da39a3ee5e6b4b0d3255bfef95601890afd80709": "User",
+        "01dafa3c1f5a6273a3f6259a380cf4a2f451dd8f": "Candace",
+    }
+    var username = ""
+
     currentScreen = "main"
     const zeroPad = (num, places) => String(num).padStart(places, '0')
 
@@ -205,6 +224,7 @@
                 var externalSVGContent = document.getElementById("screen");
                 externalSVGContent.innerHTML = externalSVG;
                 updateClock()
+                updateUsername()
             }
         };
         xhr.send();
@@ -214,6 +234,9 @@
         const BUTTON_HIDDEN_MS = 300
         const BUTTON_COUNT = 7
         var buttons = []
+        var manualDelay = 20
+        var lastKeyPressTime = new Date().getTime()
+        var currentNumberSequence = ""
 
         setScreen(`/assets/console/${currentScreen}.svg`)
 
@@ -229,41 +252,86 @@
                 }, BUTTON_HIDDEN_MS);
 
                 if (screens[currentScreen][button.id] !== "") {
-                    console.log(screens[currentScreen][button.id])
                     currentScreen = screens[currentScreen][button.id]
                     setScreen(`/assets/console/${currentScreen}.svg`)
                 }
             })
         }
 
-        document.addEventListener("keypress", function (event) {
+        document.addEventListener("keypress", async function (event) {
             var keyCode = event.keyCode;
-            if (keyCode >= 49 && keyCode <= 55) {
+            if (keyCode >= 49 && keyCode <= 57) {
                 var digit = keyCode - 48;
-                runAction(digit);
+                buttonDown(digit);
+            } else if (keyCode == 13) {
+                makeAllButtonsVisible()
+                let userlookup = await sha1(currentNumberSequence)
+                login(users[userlookup] || "Guest")
+                currentNumberSequence = ""
             }
         });
 
-        function runAction(digit) {
+        async function login(currentNumberSequence) {
+            if (currentScreen == "restricted_systems") {
+                username = currentNumberSequence
+                setScreen(`/assets/console/authorized.svg`)
+                currentScreen = "authorized"
+            }
+        }
+
+        function makeAllButtonsVisible() {
+            for (var i = 0; i < BUTTON_COUNT; i++) {
+                var buttonId = "button" + (i + 1)
+                var button = document.getElementById(buttonId)
+                button.style.visibility = "visible";
+
+            }
+        }
+
+        function buttonDown(digit) {
+            lastKeyPressTime = new Date().getTime()
             if (digit >= 1 && digit <= 7) {
                 // Print the corresponding message
                 var buttonId = "button" + digit
                 var button = document.getElementById(buttonId)
                 button.style.visibility = "hidden";
-                setTimeout(function () {
-                    button.style.visibility = "visible";
-                }, BUTTON_HIDDEN_MS);
-
-                if (screens[currentScreen][button.id] !== "") {
-                    console.log(screens[currentScreen][button.id])
-                    currentScreen = screens[currentScreen][button.id]
-                    setScreen(`/assets/console/${currentScreen}.svg`)
-                }
-            } else {
-                console.log("Invalid digit. Please press a number key between 1 and 7.");
             }
         }
 
+        document.addEventListener("keyup", function (event) {
+            var keyCode = event.keyCode;
+            if (keyCode >= 49 && keyCode <= 57) {
+                var digit = keyCode - 48;
+                buttonUp(digit);
+            }
+        });
+
+        function buttonUp(digit) {
+            if (new Date().getTime() - lastKeyPressTime < manualDelay) {
+                currentNumberSequence += digit;
+            }
+            else if (digit >= 1 && digit <= 7) {
+                // Print the corresponding message
+                var buttonId = "button" + digit
+                var button = document.getElementById(buttonId)
+                button.style.visibility = "visible";
+
+                if (screens[currentScreen][button.id] !== "") {
+                    currentScreen = screens[currentScreen][button.id]
+                    setScreen(`/assets/console/${currentScreen}.svg`)
+                }
+            }
+        }
+
+        async function sha1(input) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(input);
+            const hashBuffer = await crypto.subtle.digest('SHA-1', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
+
+            return hashHex;
+        }
 
         setInterval(updateClock, 1000);
     }
@@ -287,6 +355,12 @@
         if (document.getElementById("time-string")) {
             document.getElementById("time-string").textContent = `${zeroPad(hour, 2)}:${minute}`
             document.getElementById("time-period").textContent = period
+        }
+    }
+
+    function updateUsername() {
+        if (username && document.getElementById("username")) {
+            document.getElementById("username").textContent = username.toUpperCase()
         }
     }
 </script>
