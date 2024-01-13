@@ -16,7 +16,6 @@
             url(assets/AurekBeshNarrow.woff) format('woff'),
             /* Safari, Android, iOS */
             url(assets/AurekBeshNarrow.ttf) format("truetype");
-
     }
 
     @font-face {
@@ -35,17 +34,17 @@
             /* Modern Browsers */
             url(assets/Chandrila.woff) format('woff'),
             /* Safari, Android, iOS */
-            url(assets/Chandrila.ttf) format("truetype");
+            url(assets/Chandrila-Regular.ttf) format("truetype");
 
     }
 
     @font-face {
-        font-family: "Eros Book";
+        font-family: "Space Stencil";
         src:
             /* Modern Browsers */
-            url(assets/ErosBookRegular.woff) format('woff'),
+            url(assets/space-stencil.woff) format('woff'),
             /* Safari, Android, iOS */
-            url(assets/ErosBookRegular.ttf) format("truetype");
+            url(assets/space-stencil.ttf) format("truetype");
 
     }
 
@@ -88,12 +87,15 @@
 
 <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
 <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
     const zeroPad = (num, places) => String(num).padStart(places, '0')
+    const daysOffset = parseInt(urlParams.get('offset') || 0)
+    const showFireworks = (urlParams.get('fireworks') || 'true').toLocaleLowerCase() === 'true'
+    const startDate = new Date('2023-09-30T00:00:00Z');
 
     function init() {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const message = urlParams.get('message') || "Final Voyage Live";
+        const message = urlParams.get('message') || "275th Anniversary";
         const locationString = urlParams.get('location') || "Home";
         const cabinNumber = urlParams.get('cabin') || "";
         seconds = parseInt(urlParams.get('seconds') || "60");
@@ -156,15 +158,15 @@
                 "assets/ChandrilaSmall.svg"],
         ];
         const changeTimesAndDatesUTC = [
-            { month: 9, day: 28, hour: 20, index: 1 },   // 28 - 4PM EST Coruscant
-            { month: 9, day: 28, hour: 22, index: 2 },   // 28 - 6PM EST Kuat
-            { month: 9, day: 29, hour: 0, index: 3 },    // 28 - 8PM EST Bespin
-            { month: 9, day: 29, hour: 2, index: 4 },    // 28 - 10PM EST Adinax 1
-            { month: 9, day: 29, hour: 12, index: 5 },   // 29 - 8AM EST Batuu
-            { month: 9, day: 30, hour: 2, index: 6 },    // 29 - 10PM EST Adinax 2
-            { month: 9, day: 30, hour: 11, index: 7 },   // 30 - 7AM EST Chandrila 2
+            { day: 0, hour: 20, index: 1 },   // 4PM EST Coruscant
+            { day: 0, hour: 22, index: 2 },   // 6PM EST Kuat
+            { day: 0, hour: 0, index: 3 },    // 8PM EST Bespin
+            { day: 1, hour: 2, index: 4 },    // 10PM EST Adinax 1
+            { day: 1, hour: 11, index: 5 },   // 7AM EST Batuu
+            { day: 2, hour: 2, index: 6 },    // 10PM EST Adinax 2
+            { day: 2, hour: 11, index: 7 },   // 7AM EST Chandrila 2
         ];
-        const fireworksDay = 30 // 30 - 29th (but next day UTC)
+        const fireworksDay = 2 // Actually day 1 but after midnight UTC
         const fireworksHour = 2 // 2  - 10PM EST
         let currentImageIndex = 0;
         let currentImageSetIndex = 0;
@@ -173,8 +175,7 @@
 
         function changeBackgroundImage() {
             const now = new Date();
-            const utcMonth = now.getUTCMonth() + 1; // Months are zero-based, so we add 1
-            const utcDay = now.getUTCDate();
+            const utcDay = (Math.floor((now - startDate) / (24 * 60 * 60 * 1000)) + daysOffset) % 3
             const utcHour = now.getUTCHours();
 
             for (const time of changeTimesAndDatesUTC) {
@@ -189,7 +190,7 @@
             }
 
             container.style.backgroundImage = `url(${images[currentImageSetIndex][currentImageIndex]})`;
-            if (utcDay === fireworksDay && utcHour === fireworksHour) {
+            if (utcDay === fireworksDay && utcHour === fireworksHour && showFireworks) {
                 fireworks.start()
             } else {
                 fireworks.clear()
@@ -250,8 +251,9 @@
                 d="M 2193,194.499L 2511.73,194.5L 2547,227.5L 2851,227.5" />
             <text
                 transform="matrix(.8026504516601561 0.0000000000000000 0.0000000000000000 1.0000000000000000 372.00 307.00)">
-                <tspan style=" font-family:Chandrila; font-size:56.106098pt;" letter-spacing="0.00em" fill="#3ABAEA"
-                    fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" id="message"></tspan>
+                <tspan style=" font-family:Chandrila, 'Microsoft Sans Serif'; font-size:56.106098pt;"
+                    letter-spacing="0.03em" fill="#3ABAEA" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+                    id="message"></tspan>
             </text>
             <text
                 transform="matrix(1.6098481416702268 0.0000000000000000 0.0000000000000000 1.0000000000000000 373.00 352.00)">
@@ -302,10 +304,11 @@
             <line fill="none" stroke-width="6" stroke-linejoin="round" stroke="#9CCEFF" stroke-opacity="1" x1="2563"
                 y1="180.5" x2="2724" y2="180.5" />
             <text
-                transform="matrix(0.8685918450355529 0.0000000000000000 0.0000000000000000 1.0000000000000000 2500.00 147.00)"
+                transform="matrix(0.8685918450355529 0.0000000000000000 0.0000000000000000 0.9000000000000000 2500.00 140.00)"
                 xml:space="preserve">
-                <tspan style=" font-family:Eros Book; font-size:78pt;" letter-spacing="0.10em" fill="#C4E1FF"
-                    fill-opacity="1" stroke-linejoin="round" id="cabin">2222</tspan>
+                <tspan style="font-family:Space Stencil; font-size:68pt;" letter-spacing="0.05em" fill="#C4E1FF"
+                    fill-opacity="1" stroke-linejoin="round" id="cabin">2222
+                </tspan>
             </text>
             <text
                 transform="matrix(0.7700805664062499 0.0000000000000000 0.0000000000000000 1.0000000000000000 2336.00 138.00)">
